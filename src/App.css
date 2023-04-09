@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.container{
+  border: 1px solid #000;
+  width: 500px;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+.header-cont{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-cont h3{
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.header-cont button{
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.form{
+  padding: 10px 0;
+}
+
+.task-cont{
+  width: 100%;
+  background-color: rgb(232, 232, 232);
+  padding: 10px 20px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.reminder{
+  background-color: pink;
+}
