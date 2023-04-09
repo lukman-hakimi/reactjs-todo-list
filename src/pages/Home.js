@@ -8,7 +8,7 @@ const Home = () => {
     const [task,setTask] = useState([])
     const [page, setPage] = useState(1);
 
-    const API_URL = "http://localhost:5000/api/tasks";
+    const API_URL = "https://todolist-mh8o.onrender.com";
 
   
     useEffect(() =>{
