@@ -9,15 +9,15 @@ const Showtask = () => {
 
     const { id } = useParams()
     const navigate = useNavigate()
-    const API_URL = "http://localhost:5000/api/tasks";
+    const API_URL = "https://todolist-mh8o.onrender.com/api/tasks";
 
     useEffect(() => {
        const getData = async () => {
         const data = await fetchTask()
 
-        setTask(data.data.task)
-        setReminder(data.data.reminder)
-        setDate(data.data.date)
+        setTask(data.data.task);
+        setReminder(data.data.reminder);
+        setDate(data.data.date);
        }
        getData()
     }, []);

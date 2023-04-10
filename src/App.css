@@ -55,3 +55,98 @@ body{
 .reminder{
   background-color: pink;
 }
+
+.actions{
+  width: 40px ; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.task{
+  text-transform: capitalize;
+}
+.date{
+  text-transform: capitalize;
+}
+
+.update{
+  color: blue; cursor:pointer;font-size:18px;
+}
+.del{
+  color: red; cursor:pointer;font-size:18px;
+}
+
+@media screen and (max-width: 520px) {
+  .container{
+    width: 350px;
+  }
+
+  .header-cont h3{
+    font-size: 18px;
+  }
+
+  .header-cont button{
+    padding: 2px 5px;
+    font-size: 13px;
+  }
+
+  .task{
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  .date{
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  
+  .update{
+    font-size:15px;
+  }
+  .del{
+    font-size:15px;
+  }
+  
+}
+@media screen and (max-width: 363px) {
+  .container{
+    width: 300px;
+  }
+
+  .form-label{
+    font-size: 14px;
+  }
+
+  input::placeholder{
+    font-size: 14px;
+  }
+
+  .setReminder{
+    font-size: 15px;
+  }
+
+  .form-control{
+    height: 28px;
+  }
+
+
+  .header-cont h3{
+    font-size: 18px;
+  }
+
+  .task{
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  .date{
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  
+  .update{
+    font-size:15px;
+  }
+  .del{
+    font-size:15px;
+  }
+  
+}

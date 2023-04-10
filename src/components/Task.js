@@ -10,24 +10,24 @@ const Task = ({task,setReminder,deleteTask}) => {
       }} 
       >
       <div>
-        <h5 style={{ textTransform:"capitalize" }}>{item?.task}</h5>
-        <h6 style={{ textTransform:"capitalize" }}>{item?.date}</h6>
+        <h5 className="task">{item?.task}</h5>
+        <h6 className="date">{item?.date}</h6>
       </div>
 
-      <div style={{ width:"40px" , display: "flex", justifyContent:"space-between"}}>
+      <div className="actions">
       <Link to={`/showtask/${item?._id}`}>
-        <i className="fa-solid fa-check" 
+        <i className="fa-solid fa-check update" 
         
-        style={{ color:"blue", cursor:"pointer",fontSize:"18px" }}
+        
         
         ></i>
       </Link>
 
-      <i className="fa-solid fa-xmark" 
+      <i className="fa-solid fa-xmark del" 
       onClick={() =>{
         deleteTask(item?._id)
       }} 
-      style={{ color:"red", cursor:"pointer",fontSize:"20px" }}></i>
+      ></i>
       </div>
       
     </div>

@@ -39,8 +39,8 @@ const Addtask = ({ addTask }) => {
     </div>
 
     <div className="mb-3 d-flex justify-content-between">
-      <h6>Set Reminder</h6>
-      <input type="checkbox" className="me-5"
+      <h6 className="setReminder">Set Reminder</h6>
+      <input type="checkbox" className="me-5 checkbox"
       onChange={(e) =>{
         setReminder(e.target.checked)
       }}
