@@ -26,12 +26,6 @@ const Home = () => {
       return await resp.json();
     }
 
-  
-    async function fetchOneData(id){
-      let res = await fetch(`${API_URL}/${id}`);
-      return await res.json()
-    }
-  
     async function setReminder(id){
       // first method 
       // setTask(
@@ -96,8 +90,10 @@ const Home = () => {
           body:JSON.stringify(tasks)
         }
       )
-      let data = await newTask.json()
-      setTask([data.data, ...task]);
+      let data = await newTask.json();
+      if(data){
+        setTask([data.data, ...task]);
+      }
     }
 
     return (
