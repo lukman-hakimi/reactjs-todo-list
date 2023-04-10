@@ -92,11 +92,12 @@ body{
 
   .task{
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 16px;
   }
+
   .date{
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .update{
@@ -133,20 +134,4 @@ body{
     font-size: 18px;
   }
 
-  .task{
-    text-transform: capitalize;
-    font-size: 14px;
-  }
-  .date{
-    text-transform: capitalize;
-    font-size: 12px;
-  }
-  
-  .update{
-    font-size:15px;
-  }
-  .del{
-    font-size:15px;
-  }
-  
 }
